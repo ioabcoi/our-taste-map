@@ -53,14 +53,16 @@ Our-Taste-Map(맛멋집)은 방문했던 맛집, 카페, 그리고 멋진 장소
 ## 📂 프로젝트 구조
 ```
 our-taste-map/
-├── docs/              # 기획 문서, 와이어프레임
+├── .github/            # 협업 규칙
+├── docs/               # 기획 문서, 와이어프레임
 ├── src/
-│   ├── components/    # 재사용 컴포넌트
-│   ├── pages/         # 페이지 컴포넌트
-│   ├── hooks/         # 커스텀 훅
-│   ├── utils/         # 유틸리티 함수
-│   └── styles/        # 스타일 파일
-├── public/            # 정적 파일
+│   ├── components/     # 재사용 컴포넌트
+│   ├── pages/          # 페이지 컴포넌트
+│   ├── hooks/          # 커스텀 훅
+│   ├── utils/          # 유틸리티 함수
+│   └── styles/         # 스타일 파일
+├── public/             # 정적 파일
+├── memo.md
 └── README.md
 ```
 
@@ -104,6 +106,81 @@ our-taste-map/
 
 ## 📝 개발 일지
 개발 과정과 고민들은 [Issues](../../issues)와 [Wiki](../../wiki)에 기록합니다.
+
+## 📚 문서
+
+```
+🎯 기획 문서
+/docs/planning/
+├── 01-feature-list.md            # 처음에 정리한 기능 목록
+├── 02-user-persona.md            # 누가 쓸 건지
+├── 03-user-flow.md               # 사용자 시나리오
+├── 04-IA.md                      # 정보 구조
+└── wireframes/                   # 와이어프레임 이미지/링크
+    ├── main-map.png
+    └── detail-modal.png
+
+🎨 디자인 가이드
+/docs/design/
+├── design-system.md              # 전체 디자인 시스템
+├── color-palette.md              # 컬러
+├── typography.md                 # 폰트
+└── components.md                 # 컴포넌트별 가이드
++ Figma 링크는 README나 Wiki에
+
+💻 개발 문서
+/docs/development/
+├── tech-decision.md              # 기술 스택 선정 이유
+├── folder-structure.md           # 폴더 구조 설명
+├── coding-convention.md          # 코딩 규칙
+├── api-spec.md                   # API 명세
+└── db-schema.md                  # DB 스키마
+
+🤝 협업 규칙
+/.github/
+├── COMMIT_CONVENTION.md          # 커밋 메시지 규칙
+├── BRANCH_STRATEGY.md            # 브랜치 전략
+└── PR_TEMPLATE.md                # PR 템플릿 (나중에)
+```
+
+<details>
+<summary><b>🎯 기획 문서</b></summary>
+
+- [기능 목록](docs/planning/01-feature-list.md)
+- [사용자 페르소나](docs/planning/02-user-persona.md)
+- [사용자 플로우](docs/planning/03-user-flow.md)
+- [정보 구조 (IA)](docs/planning/04-IA.md)
+
+</details>
+
+<details>
+<summary><b>🎨 디자인 가이드</b></summary>
+
+- [디자인 시스템](docs/design/design-system.md)
+- [컬러 팔레트](docs/design/color-palette.md)
+- [타이포그래피](docs/design/typography.md)
+- [컴포넌트](docs/design/components.md)
+
+</details>
+
+<details>
+<summary><b>💻 개발 문서</b></summary>
+
+- [기술 스택 결정](docs/development/tech-decision.md)
+- [폴더 구조](docs/development/folder-structure.md)
+- [코딩 컨벤션](docs/development/coding-convention.md)
+- [API 명세](docs/development/api-spec.md)
+- [DB 스키마](docs/development/db-schema.md)
+
+</details>
+
+<details>
+<summary><b>🤝 협업 규칙</b></summary>
+
+- [커밋 메시지 규칙](.github/COMMIT_CONVENTION.md)
+- [브랜치 전략](.github/BRANCH_STRATEGY.md)
+
+</details>
 
 ## 📄 라이선스
 MIT License
