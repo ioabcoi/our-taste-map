@@ -1,0 +1,58 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* 컬러 시스템 */
+    --color-first: #222831;
+    --color-second: #393E46;
+    --color-third: #00ADB5;
+    --color-fourth: #EEEEEE;
+    
+    /* 텍스트 컬러 */
+    --text-primary: #222831;
+    --text-secondary: #393E46;
+    --text-tertiary: #7D8491;
+    --text-inverse: #FFFFFF;
+    
+    /* 배경 컬러 */
+    --bg-primary: #EEEEEE;
+    --bg-secondary: #FFFFFF;
+    --bg-dark: #222831;
+    
+    /* 그림자 */
+    --shadow-sm: 0 1px 2px rgba(34, 40, 49, 0.05);
+    --shadow-md: 0 4px 6px rgba(34, 40, 49, 0.1);
+    --shadow-lg: 0 10px 15px rgba(34, 40, 49, 0.15);
+  }
+  
+  body {
+    font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+  }
+}
+
+@layer components {
+  /* 버튼 스타일 */
+  .btn-primary {
+    @apply px-6 py-3 bg-accent text-white rounded-lg font-medium;
+    @apply hover:bg-[#00D9E3] transition-all duration-200;
+    @apply shadow-sm hover:shadow-md;
+  }
+  
+  .btn-secondary {
+    @apply px-6 py-3 bg-transparent text-primary rounded-lg font-medium;
+    @apply border-2 border-gray-400 hover:bg-gray-100;
+    @apply transition-all duration-200;
+  }
+  
+  /* 카드 스타일 */
+  .card {
+    @apply p-6 bg-white rounded-lg border border-gray-200;
+    @apply shadow-sm hover:shadow-md transition-all duration-200;
+  }
+}
